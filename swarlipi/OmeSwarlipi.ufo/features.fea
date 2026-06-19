@@ -86,3 +86,8 @@ table GDEF {
 
 } GDEF;
 
+feature liga {
+    # tilde (~) -> SS (two overlapping S, smaller)
+    sub asciitilde by S_S_small_overlap;
+} liga;
+

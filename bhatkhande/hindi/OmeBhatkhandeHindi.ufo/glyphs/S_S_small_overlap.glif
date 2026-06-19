@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="S_S_small_overlap" format="1">
+  <advance width="1100" />
+  <outline>
+    <component base="s" xScale="0.45" yScale="0.45" x="-70" y="0" />
+    <component base="s" xScale="0.45" yScale="0.45" x="260" y="0" />
+  </outline>
+</glyph>

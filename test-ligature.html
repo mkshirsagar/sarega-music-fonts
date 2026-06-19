@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Omenaad Font - SS Ligature Test (Tilde to SS)</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 40px 20px;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            color: white;
+            text-align: center;
+            margin-bottom: 40px;
+            font-size: 2.5em;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .test-section {
+            background: white;
+            border-radius: 12px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+        }
+
+        .test-section h2 {
+            color: #333;
+            margin-bottom: 20px;
+            font-size: 1.5em;
+            border-bottom: 2px solid #667eea;
+            padding-bottom: 10px;
+        }
+
+        .font-test {
+            margin-bottom: 25px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-left: 4px solid #667eea;
+            border-radius: 4px;
+        }
+
+        .font-test h3 {
+            color: #667eea;
+            margin-bottom: 10px;
+            font-size: 1.1em;
+        }
+
+        .font-test p {
+            color: #555;
+            margin-bottom: 10px;
+            font-size: 0.9em;
+        }
+
+        .font-test .example {
+            font-size: 3em;
+            font-weight: normal;
+            line-height: 1.5;
+            color: #000;
+            background: white;
+            padding: 15px;
+            border-radius: 4px;
+            margin-top: 10px;
+            font-feature-settings: "liga" 1;
+        }
+
+        @font-face {
+            font-family: 'Ome Bhatkhande English';
+            src: url('./ttf/OmeBhatkhandeEnglish.ttf') format('truetype');
+        }
+
+        @font-face {
+            font-family: 'Ome Bhatkhande Hindi';
+            src: url('./ttf/OmeBhatkhandeHindi.ttf') format('truetype');
+        }
+
+        @font-face {
+            font-family: 'Ome Bhatkhande Punjabi';
+            src: url('./ttf/OmeBhatkhandePunjabi.ttf') format('truetype');
+        }
+
+        @font-face {
+            font-family: 'Ome Bhatkhande Bangla';
+            src: url('./ttf/OmeBhatkhandeBangla.ttf') format('truetype');
+        }
+
+        @font-face {
+            font-family: 'Ome Swarlipi';
+            src: url('./ttf/OmeSwarlipi.ttf') format('truetype');
+        }
+
+        .english .example { font-family: 'Ome Bhatkhande English'; }
+        .hindi .example { font-family: 'Ome Bhatkhande Hindi'; }
+        .punjabi .example { font-family: 'Ome Bhatkhande Punjabi'; }
+        .bangla .example { font-family: 'Ome Bhatkhande Bangla'; }
+        .swarlipi .example { font-family: 'Ome Swarlipi'; }
+
+        .explanation {
+            background: #e7f3ff;
+            border-left: 4px solid #2196F3;
+            padding: 15px;
+            border-radius: 4px;
+            margin-top: 20px;
+            font-size: 0.95em;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .feature-note {
+            background: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 15px;
+            border-radius: 4px;
+            margin-bottom: 20px;
+            font-size: 0.95em;
+            color: #333;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+            font-size: 0.95em;
+        }
+
+        table th, table td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+
+        table th {
+            background: #f5f5f5;
+            font-weight: 600;
+            color: #333;
+        }
+
+        table tr:hover {
+            background: #f9f9f9;
+        }
+
+        .code {
+            font-family: 'Courier New', monospace;
+            background: #f5f5f5;
+            padding: 2px 6px;
+            border-radius: 3px;
+            color: #d63384;
+        }
+
+        footer {
+            text-align: center;
+            color: white;
+            margin-top: 40px;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🎵 Omenaad Fonts - SS Ligature Test</h1>
+
+        <div class="test-section">
+            <h2>How It Works</h2>
+            <div class="feature-note">
+                <strong>Ligature Rule:</strong> When you type the tilde character <span class="code">~</span>, 
+                it displays as <strong>two overlapping S characters</strong> (smaller in size).
+                <br><br>
+                The actual text contains <span class="code">~</span> but the font renders it as <strong>ⓢⓢ</strong> 
+                (two smaller S's with overlap).
+            </div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>What You Type</th>
+                        <th>What You See</th>
+                        <th>Font File Property</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><span class="code">~</span> (tilde)</td>
+                        <td>SS (two overlapping S characters, 75% size)</td>
+                        <td><code>S_S_small_overlap</code> glyph</td>
+                    </tr>
+                    <tr>
+                        <td>Normal text stays normal</td>
+                        <td>Normal text</td>
+                        <td>Ligature only affects ~</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="test-section">
+            <h2>Font Tests</h2>
+
+            <!-- English -->
+            <div class="font-test english">
+                <h3>Ome Bhatkhande English</h3>
+                <p>Test the tilde ligature in English font:</p>
+                <p><strong>Type: </strong> <span class="code">~</span></p>
+                <p><strong>Display: </strong> Two overlapping S characters</p>
+                <div class="example">Result ~</div>
+                <p style="margin-top: 10px; font-size: 0.85em; color: #999;">Full example: Test~ing shows how the ~ displays as two S's</p>
+                <div class="example">Test~ing</div>
+            </div>
+
+            <!-- Hindi -->
+            <div class="font-test hindi">
+                <h3>Ome Bhatkhande Hindi</h3>
+                <p>Test the tilde ligature in Hindi font:</p>
+                <p><strong>Type: </strong> <span class="code">~</span></p>
+                <p><strong>Display: </strong> Two overlapping S characters</p>
+                <div class="example">~</div>
+                <p style="margin-top: 10px; font-size: 0.85em; color: #999;">Full example: Hin~di shows how the ~ displays as two S's</p>
+                <div class="example">Hin~di</div>
+            </div>
+
+            <!-- Punjabi -->
+            <div class="font-test punjabi">
+                <h3>Ome Bhatkhande Punjabi</h3>
+                <p>Test the tilde ligature in Punjabi font:</p>
+                <p><strong>Type: </strong> <span class="code">~</span></p>
+                <p><strong>Display: </strong> Two overlapping S characters</p>
+                <div class="example">~</div>
+                <p style="margin-top: 10px; font-size: 0.85em; color: #999;">Full example: Punj~bi shows how the ~ displays as two S's</p>
+                <div class="example">Punj~bi</div>
+            </div>
+
+            <!-- Bangla -->
+            <div class="font-test bangla">
+                <h3>Ome Bhatkhande Bangla</h3>
+                <p>Test the tilde ligature in Bangla font:</p>
+                <p><strong>Type: </strong> <span class="code">~</span></p>
+                <p><strong>Display: </strong> Two overlapping S characters</p>
+                <div class="example">~</div>
+                <p style="margin-top: 10px; font-size: 0.85em; color: #999;">Full example: Bang~la shows how the ~ displays as two S's</p>
+                <div class="example">Bang~la</div>
+            </div>
+
+            <!-- Swarlipi -->
+            <div class="font-test swarlipi">
+                <h3>Ome Swarlipi</h3>
+                <p>Test the tilde ligature in Swarlipi font:</p>
+                <p><strong>Type: </strong> <span class="code">~</span></p>
+                <p><strong>Display: </strong> Two overlapping S characters</p>
+                <div class="example">~</div>
+                <p style="margin-top: 10px; font-size: 0.85em; color: #999;">Full example: Swar~lipi shows how the ~ displays as two S's</p>
+                <div class="example">Swar~lipi</div>
+            </div>
+        </div>
+
+        <div class="test-section">
+            <h2>Technical Details</h2>
+            <div class="explanation">
+                <h4 style="margin-bottom: 10px;">Glyph Composition</h4>
+                <p>
+                    The <span class="code">S_S_small_overlap</span> glyph is created by compositing two scaled S components:
+                </p>
+                <ul style="margin-left: 20px; margin-top: 10px; line-height: 1.8;">
+                    <li><strong>First S:</strong> 75% scale, positioned at x=0, y=0</li>
+                    <li><strong>Second S:</strong> 75% scale, positioned at x=700, y=0</li>
+                    <li><strong>Total width:</strong> 1800 units (creates ~32% overlap)</li>
+                </ul>
+                <br>
+                <h4 style="margin-bottom: 10px;">Feature File Rule</h4>
+                <p style="font-family: 'Courier New', monospace; background: #f5f5f5; padding: 10px; border-radius: 3px; margin-top: 10px;">
+                    feature liga {<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;sub asciitilde by S_S_small_overlap;<br>
+                    } liga;
+                </p>
+            </div>
+        </div>
+
+        <footer>
+            <p>Omenaad Font Project - OpenType Ligature Test</p>
+            <p>Build Date: <span id="buildDate"></span></p>
+        </footer>
+    </div>
+
+    <script>
+        document.getElementById('buildDate').textContent = new Date().toLocaleDateString();
+    </script>
+</body>
+</html>

@@ -95,21 +95,21 @@ To make a chhand of 2-8 notes, use the keys `Shift``+``2`&ndash;`8`:
 | Satgun (7)   | `&` | &          |
 | Athgun (8)   | `*` | *          |
 
-Additionally, <code>`</code>, `!`, and `~` can be used for a lower version of Chaugun (4), Chhatgun (6), and Athgun (8) to allow for larger groupings.
+Additionally, <code>`</code>, `!`, and `?` can be used for a lower version of Chaugun (4), Chhatgun (6), and Athgun (8) to allow for larger groupings.
 
 {:.keymap.bhatkhande-hindi}
 | Chhand Size        | Key            | Bhatkhande |
 |--------------------|----------------|------------|
 | Lower Chaugun (4)  | <code>`</code> | `          |
 | Lower Chhatgun (6) | `!`            | !          |
-| Lower Athgun (8)   | `~`            | ~          |
+| Lower Athgun (8)   | `?`            | ?          |
 
 This is an example of a chhand showing complicated layakari:
 
 {:.keymap.bhatkhande-hindi}
 | Key Strokes                          | Bhatkhande                       |
 |--------------------------------------|----------------------------------|
-| ``~#srg%mpdnsu !@sr$gmpd `qswrWgem`` | ~#srg%mpdnsu !@sr$gmpd `qswrWgem |
+| ``?#srg%mpdnsu !@sr$gmpd `qswrWgem`` | ?#srg%mpdnsu !@sr$gmpd `qswrWgem |
 
 ## Meend
 
